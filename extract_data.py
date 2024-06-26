@@ -10,13 +10,16 @@ import sys
 # print the current timestamp
 print("Start time: " + str(datetime.datetime.now()).split('.')[0])
 
+import sys
+
 # setup progress bar
 toolbar_width = 60
-sys.stdout.write("[%s" % (" " * (toolbar_width/3)))
-sys.stdout.write("***Processing data***")
-sys.stdout.write("%s]" % (" " * (toolbar_width/3)))
+sys.stdout.write("\n[%s" % (" " * (toolbar_width // 3)))
+sys.stdout.write("***Predicting data***")
+sys.stdout.write("%s]" % (" " * (toolbar_width // 3)))
 sys.stdout.flush()
 sys.stdout.write("\n")
+
 
 # initialize variables
 column = []
